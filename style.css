@@ -20,7 +20,7 @@
     width: 200px;
 }
 
-.text-logo-2{
+.textNavBar{
     font-family: 'Orbitron', sans-serif;
     font-size: 35px;
     color: antiquewhite;
@@ -35,32 +35,34 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: row;
     
     /* background: linear-gradient(155deg, rgba(0,36,25,0.9698004201680672) 21%, rgba(20,29,55,0.9810049019607843) 96%); */
-    height: 100vh;
-    min-height: 500px; 
+    min-height: 100vh;
+    min-height: 600px; 
     
     /* background: rgb(98,215,245);
     background: linear-gradient(156deg, rgba(98,215,245,1) 23%, rgba(132,25,232,1) 71%, rgba(89,3,228,1) 91%); */
     flex-wrap: wrap;
     
-    background-image: linear-gradient( 113.3deg,  rgba(217,9,27,1) 6.9%, rgba(22,68,150,1) 75% );
-
-    
-    
-    
+    background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgba(83,138,214,1) 0%, rgba(134,231,214,1) 90% );   
 } 
-.text-1{
+
+.text-home{
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     margin-top: 10%;
     margin-right: 5%;
+    padding-top: 50px;
     width: 400px;
-    height: 300px;
-    border-radius: 10px;
-    
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
-    padding-top: 50px;
-    
+}
+.imagem-lp-home img{
+    height: 400px;
+    margin-top: 20%;  
+    margin-bottom: 5%;
 }
 /* Button resets and style */
 button {
@@ -74,8 +76,7 @@ button {
 	border: 0px solid #000;
     /* background: rgb(245,206,98);
     background: linear-gradient(90deg, rgba(245,206,98,1) 23%, rgba(232,90,25,1) 71%, rgba(228,54,3,1) 91%); */
-    background: rgb(175,161,253);
-background: linear-gradient(77deg, rgba(175,161,253,1) 0%, rgba(175,161,253,1) 26%, rgba(154,117,253,1) 45%, rgba(83,0,255,1) 73%, rgba(47,0,145,1) 100%);
+    background-image: linear-gradient( 68.3deg,  rgba(245,177,97,1) 0.4%, rgba(236,54,110,1) 100.2% );
     box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
 	}
 
@@ -83,19 +84,10 @@ background: linear-gradient(77deg, rgba(175,161,253,1) 0%, rgba(175,161,253,1) 2
 button.pulse-button {
 	animation: borderPulse 1000ms infinite ease-out, colorShift 10000ms infinite ease-in;
 }
-
-.imagem-lp img{
-    height: 400px;
-    margin-top: 30%;  
-}
-
-
-
-
 /* Declare border pulse animation */
 @keyframes borderPulse {
   0% {
-    box-shadow: inset 0px 0px 0px 5px rgba(129, 3, 247, 0.144), 0px 0px 0px 0px rgba(47,0,145,1);
+    box-shadow: inset 0px 0px 0px 5px rgba(129, 3, 247, 0.144), 0px 0px 0px 0px rgb(236,54,110,1);
   }
   100% {
     box-shadow: inset 0px 0px 0px 1px rgba(5, 5, 226, 0.2), 0px 0px 0px 10px rgba(248, 2, 2, 0);
@@ -119,22 +111,78 @@ button.pulse-button {
 .sobre{
     /* display: flex; */
 
-    height: 100vh;
+    min-height: 100vh;
     background-color: #85FFBD;
 background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
 
 }
-
-   
-
 .sobre img{
     height: 100px;
     width: 100px;
-    
-    margin-top: -50px;
+    margin-top: -40px;
     border-radius: 22px;
     box-shadow: 0px 0px 100px;
     margin-left: 13%;
     text-align: center;
+}
+.CTA1
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 6%;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
     
 }
+
+.CTA1 h2{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    border: solid white 1px;
+}
+#span1-CAT1{
+    padding: 10px 10px 10px 10px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    border: solid white 1px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 20px;
+}
+#span2-CAT1{
+    padding: 10px 10px 10px 10px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    border: solid white 1px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  
+    font-size: 30px;
+}
+#span3-CAT1{
+    padding: 10px 10px 10px 10px;
+    
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    border: solid white 1px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  
+    font-size: 20px;
+}
+#span4-CAT1{
+    padding: 10px 10px 10px 10px;
+    
+    width: 400px;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom: 25px;
+    border: solid white 1px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  
+    font-size: 20px;
+}
+
