@@ -259,7 +259,7 @@ background: #E5E8F0;
 }
 .teste .content{
     height: auto;
-    width: 60%;
+    width: 80%;
     background-color: #FFFFFF;
     margin-left: auto;
     margin-right: auto;
@@ -283,7 +283,7 @@ background: #E5E8F0;
     margin-bottom: 20px;
     
     text-align: center;
-    width: 70%;
+    width: 90%;
     justify-content: center;
 }
 
